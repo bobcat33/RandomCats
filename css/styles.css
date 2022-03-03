@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cover {
+  background-color: white;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-container {
+  background-color: white;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fixed {
+    position: sticky;
+    margin-top: calc(50vh - 74px);
+    top: 1vh;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    font-size: 30;
+}
+
+.textbox {
+    margin: auto;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(68, 66, 66);
+    color: white;
+    border-radius: 25px;
+}
+
+#popup-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0%;
+    animation: none;
+}
+
+@keyframes popup {
+    0% {
+        bottom: 0;
+        opacity: 0%;
+    }
+    10% {
+        bottom: 25vh;
+        opacity: 100%;
+    }
+    70% {
+        bottom: 25vh;
+        opacity: 100%;
+    }
+    100% {
+        bottom: 25vh;
+        opacity: 0%;
+    }
+}
+
+#fullscreen {
+    right: 1vh;
+}
+
+#github {
+    left: 1vh;
+}
+
+.button-image {
+    width: 34px;
+    height: 34px;
+}
+
+.main-button {
+    position: fixed;
+    top: 1vh;
+    z-index: 1;
+}
+
+.main-button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .button-image {
+        height: 17px;
+        width: 17px;
+    }
+
+    .textbox {
+        padding: 10px;
+        border-radius: 12.5px;
+    }
+
+    .header {
+        font-size: 15;
+    }
+
+    .fixed {
+        margin-top: calc(50vh - 34px);
+    }
+}

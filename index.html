@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Random Cats</title>
+
+        <script src="js/scripts.js"></script>
+
+        <link rel="stylesheet" href="css/styles.css"/>
+
+    </head>
+    <body onload="generateRandom();setup();">
+        <a id="github" class="textbox main-button" href="https://github.com/bobcat33/RandomCats" target=”_blank”>
+            <img id="github-image" class="button-image" src="images/github_white.png"/>
+        </a>
+
+        <div id="fullscreen" class="textbox main-button" onclick="toggleFullscreen();">
+            <img id="fullscreen-image" class="button-image" src="images/fullscreen_white.png"/>
+        </div>
+
+        <div class="header">
+            <div class="fixed">
+                <div class="textbox">Someone wants to say hi :3</div>
+    
+            </div>
+
+            <div class="cover">
+                <br/>
+                (scroll)<br/>
+                |<br/>
+                |<br/>
+                |<br/>
+                V
+            </div>
+
+            <div id="image-container" class="background-container" onclick="popupTrigger();">
+                <div id="popup-container">
+                    <div id="popup-box" class="textbox"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
