@@ -3,7 +3,7 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
-var totalBGs = 21;
+var totalBGs = 25;
 var backgroundIds = Array.from({length: totalBGs}, (_, i) => i + 1);
 var availableIds = [...backgroundIds];
 
